@@ -17,6 +17,7 @@ class TestDashboard < MiniTest::Unit::TestCase
         "targets": [],
         "font": "DroidSans",
         "thickness": 2,
+        "template": "default",
         "bgcolor": "#FFFFFF",
         "fgcolor": "#333333",
         "majorGridLineColor": "#ADADAD",
@@ -29,7 +30,7 @@ class TestDashboard < MiniTest::Unit::TestCase
         ]
       ]
       }},
-      url: "http://graphite01.pp.local/render/?width=800&height=400&from=-7d&fontSize=10&title=New%20Graph&targets=&font=DroidSans&thickness=2&bgcolor=%23FFFFFF&fgcolor=%23333333&majorGridLineColor=%23ADADAD&minorGridLineColor=%23E5E5E5&target=stats.timers.production.rails.controller.total.mean&_timestamp_=1320820805352#.png"
+      url: "http://graphite01.pp.local/render/?width=800&height=400&from=-7d&fontSize=10&title=New%20Graph&targets=&font=DroidSans&thickness=2&template=default&bgcolor=%23FFFFFF&fgcolor=%23333333&majorGridLineColor=%23ADADAD&minorGridLineColor=%23E5E5E5&target=stats.timers.production.rails.controller.total.mean&_timestamp_=1320820805352#.png"
     }
     assert @graph_uuid = Graph.save(@graph_json)
   end

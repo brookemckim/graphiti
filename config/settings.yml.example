@@ -16,6 +16,7 @@ default_options:
   font: DroidSans
   fontSize: 10
   thickness: 2
+  template: "default"
   bgcolor: "#FFFFFF"
   fgcolor: "#333333"
   majorGridLineColor: "#ADADAD"
